@@ -43,7 +43,7 @@
             color: fade-out($white, 0.3);
 
             &:hover {
-                color: $white;
+                color: $primary;
             }
         }
 
@@ -54,7 +54,7 @@
                     padding: 0 1rem;
 
                     &:hover {
-                        color: $white;
+                        color: $primary;
                     }
                 }
 
@@ -72,7 +72,7 @@
             background-color: $white;
 
             .navbar-brand {
-                color: $gray-900;
+                // color: $gray-900;
 
                 &:hover {
                     color: $primary;
@@ -82,7 +82,7 @@
             .navbar-nav {
                 .nav-item {
                     .nav-link {
-                        color: $gray-900;
+                        // color: $gray-900;
 
                         &:hover {
                             color: $primary;

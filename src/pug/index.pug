@@ -29,35 +29,52 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        //- nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.py-3
-        //-     .container.px-4.px-lg-5
-        //-         a.navbar-brand(href='#page-top') Start Bootstrap
-        //-         button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-        //-             span.navbar-toggler-icon
-        //-         #navbarResponsive.collapse.navbar-collapse
-        //-             ul.navbar-nav.ms-auto.my-2.my-lg-0
-        //-                 li.nav-item
-        //-                     a.nav-link(href='#about') About
-        //-                 li.nav-item
-        //-                     a.nav-link(href='#services') Services
-        //-                 li.nav-item
-        //-                     a.nav-link(href='#portfolio') Portfolio
-        //-                 li.nav-item
-        //-                     a.nav-link(href='#contact') Contact
+        nav#mainNav.navbar.navbar-expand-lg.bg-dark.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='#page-top') Schwifty Bikes
+                img.img-fluid(src='assets/favness.png', alt='...')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='#portfolio') Shop
+                        li.nav-item
+                            a.nav-link(href='#about') About
 
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.h-100
-                .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
-                    .col-lg-8.align-self-end
-                        h1.text-white.font-weight-bold Schwifty Bikes
-                        hr.divider
-                    .col-lg-8.align-self-baseline
-                        p.text-white-75.mb-5
-                            | Finding the bike that fits you
-                        a.btn.btn-primary.btn-xl(href='#portfolio') Shop Now
+                //- .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
+                //-     .col-lg-8.align-self-end
+                //-         h1.text-white.font-weight-bold Schwifty Bikes
+                //-         hr.divider
+                //-     .col-lg-8.align-self-baseline
+                //-         p.text-white-75.mb-5
+                //-             | Finding the bike that fits you
+                //-         a.btn.btn-primary.btn-xl(href='#portfolio') Shop Now
                         //- a.btn.btn-primary.btn-xl(href='#about') Find Out More
 
+        // About
+        section#about.page-section.bg-primary
+            .container-fluid.px-5
+                .row.g-0
+                    .col-lg-6.col-sm-12
+                        img.img-fluid(src='assets/img/info-1.jpg', alt='...')
+                    .col-lg-6.col-sm-12.p-5
+                        h2.text-white.mt-0.text-center We've got what you need!
+                        hr.divider.divider-light
+                        p.text-white-75.mb-4
+                            | No matter what kind of rider we'll find a bike that fits you. Choose from a variety of bikes in our store below. If you don't find a model you like contact us and we'll see what we can do to get you back on the go.
+                .row.g-0
+                    .col-lg-6.col-sm-12.p-5
+                        h2.text-white.mt-0.text-center Make it last!
+                        hr.divider.divider-light
+                        p.text-white-75.mb-4
+                            | All of our bikes come with a life time gaurantee so you don't have to worry about any fixes. Just send it back and we'll make it good as new. One of the ways we like to show we care about our customers.
+                    .col-lg-6.col-sm-12
+                        img.img-fluid(src='assets/img/info-2.jpg', alt='...')
+               
         // Services
         section#services.page-section.bg-dark
             .container.px-4.px-lg-5.text-white
@@ -82,28 +99,7 @@ html(lang='en')
                                 i.bi-heart.fs-1.text-primary
                             h3.h4.mb-2 Made with Love
                             p.text-white-75.mb-0 We give a piece of ourselves everytime we work on a new ride
-
-        // About
-        section#about.page-section.bg-primary
-            .container-fluid.px-5
-                .row.g-0
-                    .col-lg-6.col-sm-12
-                        img.img-fluid(src='assets/img/info-1.jpg', alt='...')
-                    .col-lg-6.col-sm-12.p-5
-                        h2.text-white.mt-0.text-center We've got what you need!
-                        hr.divider.divider-light
-                        p.text-white-75.mb-4
-                            | No matter what kind of rider we'll find a bike that fits you. Choose from a variety of bikes in our store below. If you don't find a model you like contact us and we'll see what we can do to get you back on the go.
-                .row.g-0
-                    .col-lg-6.col-sm-12.p-5
-                        h2.text-white.mt-0.text-center Make it last!
-                        hr.divider.divider-light
-                        p.text-white-75.mb-4
-                            | All of our bikes come with a life time gaurantee so you don't have to worry about any fixes. Just send it back and we'll make it good as new. One of the ways we like to show we care about our customers.
-                    .col-lg-6.col-sm-12
-                        img.img-fluid(src='assets/img/info-2.jpg', alt='...')
                         
- 
         // Portfolio
         #portfolio
             .container-fluid.p-0
